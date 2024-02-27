@@ -1,5 +1,4 @@
 Submitted by:
-Aliwate, Denzel P.
-Cadalo, Karen
+Denzel P. Aliwate and Karen Cadalo
 
 Course and Section: BSIT - 3R7
