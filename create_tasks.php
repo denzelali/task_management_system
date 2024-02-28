@@ -30,8 +30,12 @@ session_start()
       <div class="collapse navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="view_tasks.php">Home</a>
+            <a class="nav-link" aria-current="page" href="view_tasks.php">View Tasks</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="create_tasks.php">Add Task</a>
+          </li>
+
           <li>
             <a class="nav-link" href="about.php">About</a>
           </li>
@@ -73,7 +77,7 @@ session_start()
                                 <label for="due_date" class="form-label">Due Date: </label>
                                 <input type="date" id="due_date" name="due_date" class="form-control" required>
                             </div>
-                            <button type="submit" name="backend_process/createTask" class="btn btn-primary">Submit</button>
+                            <button type="submit" name="createTask" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>

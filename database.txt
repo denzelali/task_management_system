@@ -1,6 +1,5 @@
 CREATE DATABASE task_management;
 
-
 CREATE TABLE tasks
 (
  task_id int PRIMARY KEY AUTO_INCREMENT,
@@ -11,12 +10,3 @@ CREATE TABLE tasks
 );
 
 
-CREATE TABLE users
-(
- id int PRIMARY KEY AUTO_INCREMENT,
- email VARCHAR(100),
- fname VARCHAR(100), 
- mname VARCHAR(100),
- lname VARCHAR(100),
- password VARCHAR(100)
-);
