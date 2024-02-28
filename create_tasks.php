@@ -44,7 +44,7 @@ session_start()
 </header>
 
 <body>
-<section class="vh-100 bg-primary" style="background-color: #0000;">
+<section class="vh-100 bg-DFFFD8" style="background-color: #DFFFD8;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -73,7 +73,7 @@ session_start()
                                 <label for="due_date" class="form-label">Due Date: </label>
                                 <input type="date" id="due_date" name="due_date" class="form-control" required>
                             </div>
-                            <button type="submit" name="createTask" class="btn btn-primary">Submit</button>
+                            <button type="submit" name="backend_process/createTask" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>

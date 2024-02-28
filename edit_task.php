@@ -5,7 +5,7 @@ $db = new mysqli("localhost", "root", "", "task_management");
 if(!$db){
     die("Error in db". mysqli_connect_error());
 } else {
-    // Check if task_id is set in the URL
+
     if(isset($_POST['updateTask'])) {
         $id = $_POST['task_id'];
         $title = $_POST['title'];
@@ -15,17 +15,10 @@ if(!$db){
         
         $_SESSION['task_id'] = $id;
 
-        // echo $id;
-        // echo $title;
-        // echo $description;
-        // echo $priority;
-        // echo $due_date;
-
         $qry = "SELECT * FROM tasks WHERE task_id = $id";
         
         $run = $db->query($qry);
         
-        // Check if query executed successfully
         if($run !== false && $run->num_rows > 0) {
             while($row = $run->fetch_assoc()) {
                 $title = $row['title'];
@@ -85,7 +78,7 @@ if(!$db){
 
 <body>
     
-<section class="vh-100 bg-success" style="background-color: #0000;">
+<section class="vh-100 bg-DFFFD8" style="background-color: #DFFFD8;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -100,8 +93,8 @@ if(!$db){
         </div>
         <div class="mb-3">
             <label for="description" class="form label">Description:</label>      
-
-            <textarea id="description" name="description" class="form-control" placeholder="Enter Description" value="<?php echo $description; ?>" required></textarea>
+      
+            <textarea id="description" name="description" class="form-control" placeholder="Enter Description" required><?php echo $description; ?></textarea>
         </div>
         <div class="mb-3">
             <label for="priority" class="form label">Priority:</label>

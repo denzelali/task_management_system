@@ -59,3 +59,62 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 
+.bg-dark {
+    background-color: #DFCCFB !important;
+}
+
+.card{
+    background-color: #FFF3DA !important;
+}
+
+.table {
+    background-color: #B6E2A1 !important;
+}
+
+
+.add button.btn-primary {
+    background-color: #B6E2A1; 
+    border-color: #B6E2A1;
+    color: black;
+}
+
+.mb-3 button.btn-primary {
+    background-color: #B6E2A1; 
+    border-color: #B6E2A1;
+    color: black;
+}
+
+.mb-3 button.btn-primary:hover {
+    background-color: #B6E2A1; 
+    border-color: #B6E2A1;
+}
+
+
+.add button.btn-primary:hover {
+    background-color: #B6E2A1; 
+    border-color: #B6E2A1;
+}
+
+
+
+.table-responsive button.btn-success {
+    background-color: #BCE29E; 
+    border-color: #BCE29E;
+    color: black;
+}
+
+.table-responsive button.btn-success:hover {
+    background-color: #BCE29E; 
+    border-color: #BCE29E;
+
+}
+.table-responsive button.btn-danger {
+    background-color: #FF9B9B; 
+    border-color: #FF9B9B;
+    color: black;
+}
+
+
+.table-responsive table-hover  {
+    background-color: #FF9B9B !important;
+}
